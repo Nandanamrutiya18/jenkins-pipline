@@ -1,14 +1,12 @@
 pipeline {
     agent any
-    parameters {
-  choice choices: ['ok:continue'], name: 'continue'
-}
-
-    stages {
+       stages {
         stage('Build') {
             steps {
                 echo 'Building..'
-
+input {
+  message 'should we continue'
+}
 
             }
         }
