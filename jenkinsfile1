@@ -4,10 +4,6 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-input {
-  message 'should we continue'
-}
-
             }
         }
         stage('Test') {
