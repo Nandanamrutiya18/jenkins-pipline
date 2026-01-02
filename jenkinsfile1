@@ -1,10 +1,14 @@
 pipeline {
     agent any
+    parameters {
+  choice choices: ['ok:continue'], name: 'continue'
+}
 
     stages {
         stage('Build') {
             steps {
                 echo 'Building..'
+
 
             }
         }
